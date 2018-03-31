@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <title>Articles</title>
+</head>
+<body>
+<h1>{{ Title }} fetching is done.</h1>
+<br>
+<h1>ID || aid || title || aDate || naver link || press </h1>
+
+{% for obj in object_list %}
+    {{ obj.id }} ||    {{ obj.aid }} ||    {{ obj.title }} ||    {{ obj.aDate }} ||    <a href = {{ obj.nurl }}>{{ obj.nurl }}</a> ||    {{ obj.press }}<br>
+    <h2>---------------------------------------------------------</h2>
+{% endfor %}
+</body>
+</html>
